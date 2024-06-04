@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #392467;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    /* background: linear-gradient(to right, #e2e2e2, #c9d6ff); */
+    background: linear-gradient(to right, #1f1f1f, #1f1f1f);
+
+
+}
+
+.container {
+    background: linear-gradient(to right, #000000, #141414);
+    
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 1000px;
+    max-width: 100%;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    margin:0px;
+}
+
+.container .navbar {
+    display: flex;
+    width: 1000px;
+    max-width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 12px;
+    color: rgb(255, 244, 244);
+}
+
+.container .navbar ul li {
+    list-style: none;
+    font-size: 14px;
+}
+
+.navbar ul button {
+    padding: 7px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    margin: 0;
+    box-sizing: border-box;
+    height: 35px;
+    width: 140px;
+}
+
+.navbar ul button:hover {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    transition: all 0.7s ease;
+    margin: 0;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 1000;
+    position: relative;
+    left: 5px;
+}
+
+.search-input {
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    background: #f0f2f5;
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+.search-button {
+    background: #352F44;
+    border: none;
+    padding: 12px 12px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button i {
+    font-size: 15px;
+}
+
+.main {
+    width: 1000px;
+    height: 510px;
+    background: linear-gradient(to right, #000000, #141414);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+
+.main .heading {
+    width: 960px;
+    height: 180px;
+    background-color: #F6B17A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.main .heading .detailes{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 20px 40px;
+}
+.detailes .one p{
+    font-size: 15px;
+}
+.detailes .one p:nth-child(1){
+    margin-top: -10px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.detailes .two{
+    display: flex;
+    margin-top:20px ;
+    margin-bottom: -20px;
+    /* flex-direction: ; */
+    justify-content: space-between;
+    /* background-color: #392467; */
+    width: 130px;
+}
+.detailes .two div{
+    background-color: #E88D67;
+    padding: 8px 20px;
+    border-radius: 10px;   
+}
+.two div img{
+    width: 22px;
+    height: 22px;
+}
+
+
+
+.backpng img {
+    width: 320px;
+    height: 330px;
+    margin-right: 40px;
+    margin-top: 7px;
+}
+
+#analyticmenu nav {
+    display: flex;
+    width: 960px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #dbdad7;   */
+    padding: 10px;
+    margin-top: 5px;
+    color: white;
+}
+#analyticmenu nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+#analyticmenu nav ul li{
+    list-style: none;
+}
+
+.main .analytics {
+    width: 960px;
+    height: 300px;
+    /* background-color: #a4b49456; */
+    /* margin: 20px; */
+    margin: 5px 0px 30px 0px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+}
+.main .analytics img{
+    width: 20px;
+    height: 20px;
+}
+.main .analytics .one{
+    width:225px ;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.main .analytics .one .first{
+    background-color: #ececec;
+    height: 130px;
+    width: 220px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.first div{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    margin-top: -10px;
+    font-weight: 800;
+}
+.first .p{
+    font-size: 30px;
+}
+
+.main .analytics .one .second {
+    background-color: #FF9BD2;
+    height: 130px;
+    width: 220px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.second div{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    margin-top: 0px;
+    font-weight: 800;
+}
+.second .p{
+    margin-top: 20px;
+}
+.main .analytics .two{
+    width:225px ;
+    height: 270px;
+    background-color: skyblue;
+    border-radius: 10px; 
+}
+
+
+.main .analytics .three{
+    width:225px ;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.main .analytics .three .first{
+    background-color: orangered;
+    height: 130px;
+    width: 220px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+
+.main .analytics .four{
+    width:465px ;
+    height: 270px;
+    background-color: rgb(238, 114, 120);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .analytics .four img{
+    width: 350px;
+    height: 270px;
+    /* margin-top: 20px; */
+}
+
+
